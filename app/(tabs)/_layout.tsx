@@ -7,15 +7,15 @@ import { images } from "@/constants/images";
 function TabIcon({ focused, icon, title }: any) {
     if (focused) {
         return (
-            <ImageBackground
-                source={images.highlight}
-                className="flex flex-row w-full flex-1 min-w-[112px] min-h-14 mt-4 justify-center items-center rounded-full overflow-hidden"
+            <View
+                // source={images.highlight}
+                className="flex flex-row bg-accent w-full flex-1 min-w-[112px] min-h-14 mt-4 justify-center items-center rounded-full overflow-hidden"
             >
                 <Image source={icon} tintColor="#151312" className="size-5" />
                 <Text className="text-secondary text-base font-semibold ml-2">
                     {title}
                 </Text>
-            </ImageBackground>
+            </View>
         );
     }
 
@@ -35,17 +35,18 @@ export default function TabsLayout() {
                 tabBarItemStyle: {
                     width: "100%",
                     height: "100%",
-                    left:"5%",
+                    // left:"5%",
                     justifyContent: "center",
                     alignItems: "center",
                 },
                 tabBarStyle: {
-                    backgroundColor: "#0F0D23",
+                    backgroundColor: "#000814",
                     borderRadius: 50,
-                    marginHorizontal: 20,
+                    paddingHorizontal: 20,
+                    paddingTop:5,
                     marginBottom: 56,
-
                     height: 60,
+                    width: "100%",
                     position: "absolute",
                     overflow: "hidden",
                     borderWidth: 1,

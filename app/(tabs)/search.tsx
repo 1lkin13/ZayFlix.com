@@ -6,7 +6,7 @@ import { icons } from "@/constants/icons";
 
 import useFetch from "@/services/usefetch";
 import { fetchMovies } from "@/services/api";
-// import { updateSearchCount } from "@/services/appwrite";
+import { updateSearchCount } from "@/services/appwrite";
 
 import SearchBar from "@/components/SearchBar";
 import MovieDisplayCard from "@/components/MovieCard";
@@ -32,10 +32,10 @@ const Search = () => {
             if (searchQuery.trim()) {
                 await loadMovies();
 
-                // // Call updateSearchCount only if there are results
-                // if (movies?.length! > 0 && movies?.[0]) {
-                //     await updateSearchCount(searchQuery, movies[0]);
-                // }
+                // Call updateSearchCount only if there are results
+                if (movies?.length! > 0 && movies?.[0]) {
+                    await updateSearchCount(searchQuery, movies[0]);
+                }
             } else {
                 reset();
             }
@@ -106,7 +106,7 @@ const Search = () => {
                 ListEmptyComponent={
                     !loading && !error ? (
                         <View className="mt-10 px-5">
-                            <Text className="text-center text-red-500 text-md">
+                            <Text className="text-center text-gray-500">
                                 {searchQuery.trim()
                                     ? "No movies found"
                                     : "Start typing to search for movies"}

@@ -5,18 +5,27 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                primary: "#030014",
-                secondary: "#151312",
+                primary: "#000814", 
+
+                secondary: "#001B35", 
+
                 light: {
-                    100: "#D6C7FF",
-                    200: "#A8B5DB",
-                    300: "#9CA4AB",
+                    100: "#CFE8FF", 
+
+                    200: "#A8D1FF", 
+
+                    300: "#84B8F4", 
+
                 },
                 dark: {
-                    100: "#221F3D",
-                    200: "#0F0D23",
+                    100: "#0A1929", 
+
+                    200: "#020F1C", 
+
                 },
-                accent: "#AB8BFF",
+                accent: "#4F9EFF",
+                // tabbar:"#4F9EFF"
+
             },
 
 
