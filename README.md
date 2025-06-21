@@ -1,50 +1,92 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🎬 Movie Explorer App-ZayFlix
 
-## Get started
+A mobile movie discovery app built with **Expo**, **React Native**, **Appwrite**, and **TypeScript**. Designed for performance, scalability, and an enjoyable user experience.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🧪 Tech Stack
 
-2. Start the app
+- **Expo** – React Native development made easier  
+- **React Native** – Cross-platform mobile framework  
+- **Appwrite** – Backend-as-a-service for auth, DB, and more  
+- **TypeScript** – Strongly typed JavaScript  
+- **Tailwind CSS** – Utility-first styling for React Native (via NativeWind)
 
-   ```bash
-    npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🤖 Introduction
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+This app allows users to browse popular movies, with rankings generated from a custom popularity algorithm using Appwrite backend features. Built using modern UI/UX design practices, it ensures a **responsive**, **visually appealing**, and **scalable** interface.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Key features:
 
-## Get a fresh project
+- 🔍 Discover trending and top-rated movies  
+- 📊 Popularity ranking algorithm based on engagement  
+- ⚡️ Fast performance with scalable backend  
+- 🎨 Clean UI powered by Tailwind CSS
 
-When you're ready, run:
+---
+
+## 🚀 Quick Start
+
+Follow these steps to run the project locally:
+
+### ✅ Prerequisites
+
+Make sure you have the following installed:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+
+### 📥 Installation
 
 ```bash
-npm run reset-project
+git clone https://github.com/1lkin13/ZayFlix.com.git
+npm install
+````
+
+---
+
+## 🔐 Environment Setup
+
+Create a `.env` file in the root directory and add the following variables:
+
+```env
+EXPO_PUBLIC_MOVIE_API_KEY=your_tmdb_api_key
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_appwrite_project_id
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=your_database_id
+EXPO_PUBLIC_APPWRITE_COLLECTION_ID=your_collection_id
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+You can get your credentials from:
 
-## Learn more
+* [TMDB (Movie API)](https://www.themoviedb.org/)
+* [Appwrite](https://appwrite.io/)
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🖼 Screenshots
 
-## Join the community
+<table>
+  <tr>
+    <th>🏠 Home Screen</th>
+    <th>🎬 Movie Details</th>
+    <th>🔎 Search List</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/daab8e3f-ae0a-415c-add9-ad1e585d40f5" width="200" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/ab750c43-bb39-4090-beee-77a3fecf05f4" width="200" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/8a183644-cd65-43af-8252-9f13c7845e79" width="200" />
+    </td>
+  </tr>
+</table>
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
